@@ -7,7 +7,7 @@ import cors from "cors";
 /* raiz de la app */
 const app = express();
 /* Concexión a la db */
-mongoose.connect('mongodb+srv://admin:admin777@blocnotasdb.akuruqk.mongodb.net/blocnotasdb?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://admin:admin777@blocnotasdb.akuruqk.mongodb.net/blocnotasdb2?retryWrites=true&w=majority')
     .then(() => {
         console.log('Conectado a la base de datos de MongoDB Atlas');
     })
