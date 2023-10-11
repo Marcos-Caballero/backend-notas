@@ -16,14 +16,14 @@ mongoose.connect('mongodb+srv://admin:admin777@blocnotasdb.akuruqk.mongodb.net/b
     });
 
 /* Configuracion */
-const PORT = process.env.PORT || 3000; // Elige un puerto predeterminado (5000) si no se proporciona la variable de entorno PORT.
+const PORT = process.env.PORT || 3000; // Elige un puerto predeterminado (3000) si no se proporciona la variable de entorno PORT.
 
 /* Middleware */
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(
     cors({
-        origin: 'https://bloc-de-notas-final.vercel.app/',
+        origin: 'https://bloc-de-notas-final.vercel.app',
     })
 );
 
