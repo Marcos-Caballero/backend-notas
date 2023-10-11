@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import morgan from "morgan";
-import router from "./routes/notas.js";
+import router from "./src/routes/notas.js";
 import cors from "cors";
 
 /* raiz de la app */
@@ -28,6 +28,18 @@ app.use(
 );
 
 /* Rutas */
+app.get("/", (req, res) => {
+    const htmlResponse = `
+    <html>
+        <head>
+            <title>Backend api del bloc de notas</title>
+        </head>
+        <body>
+            <h1>Soy la api que permite la comunicacion con el front</h1>
+        </body>
+    `;
+    res.send(htmlResponse);
+});
 app.use('/api/', router);
 
 /* Servidor arrancando */
