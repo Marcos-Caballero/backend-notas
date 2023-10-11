@@ -23,7 +23,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(
     cors({
-        origin: 'https://bloc-de-notas-final-sb8rh1zs8-maicol-caballeros-projects.vercel.app',
+        origin: 'https://bloc-de-notas-final.vercel.app/',
     })
 );
 
