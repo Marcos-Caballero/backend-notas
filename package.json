@@ -10,7 +10,8 @@
     "cors": "^2.8.5"
   },
   "scripts": {
-    "dev": "nodemon ./src/app.js"
+    "dev": "nodemon ./src/app.js",
+    "start": "node index.js"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
