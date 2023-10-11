@@ -23,7 +23,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(
     cors({
-        origin: 'https://bloc-de-notas-final.vercel.app',
+        origin: 'https://bloc-de-notas-final.vercel.app/',
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
         preflightContinue: false,
         optionsSuccessStatus: 204,
@@ -32,7 +32,7 @@ app.use(
 );
 
 /* Rutas */
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
     const htmlResponse = `
     <html>
         <head>
